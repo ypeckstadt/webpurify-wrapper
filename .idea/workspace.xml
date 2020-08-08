@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2abf074-67d1-4d42-93fb-6b6bcea373fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webpurify-wrapper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/enum.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/language.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/parameter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/add-to-allow-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/add-to-block-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/check-count.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/check.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/get-allow-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/get-block-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/remove-from-allow-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/remove-from-block-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/replace.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/request-method.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/request.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/request/return.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/add-to-allow-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/add-to-block-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/check-count-response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/check-response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/get-allow-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/get-block-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/remove-from-allow-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/remove-from-block-list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/replace-response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/response/return-response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +49,8 @@
       <recent name="$PROJECT_DIR$/wrapper/request" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wrapper/response" />
       <recent name="$PROJECT_DIR$/wrapper/request" />
+      <recent name="$PROJECT_DIR$/wrapper/response" />
       <recent name="$PROJECT_DIR$/wrapper" />
     </key>
   </component>
@@ -112,38 +82,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="520" y="302" key="#Go_Modules/0.23.1440.877@0.23.1440.877" timestamp="1596624736016" />
-    <state width="1398" height="286" key="GridCell.Tab.0.bottom" timestamp="1596880705261">
+    <state width="1398" height="286" key="GridCell.Tab.0.bottom" timestamp="1596885987840">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="286" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596880705261" />
-    <state width="1398" height="286" key="GridCell.Tab.0.center" timestamp="1596880705259">
+    <state width="1398" height="286" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596885987840" />
+    <state width="1398" height="286" key="GridCell.Tab.0.center" timestamp="1596885987839">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="286" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1596880705259" />
-    <state width="1398" height="286" key="GridCell.Tab.0.left" timestamp="1596880705258">
+    <state width="1398" height="286" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1596885987839" />
+    <state width="1398" height="286" key="GridCell.Tab.0.left" timestamp="1596885987839">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="286" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1596880705258" />
-    <state width="1398" height="286" key="GridCell.Tab.0.right" timestamp="1596880705260">
+    <state width="1398" height="286" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1596885987839" />
+    <state width="1398" height="286" key="GridCell.Tab.0.right" timestamp="1596885987840">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="286" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1596880705260" />
-    <state width="1398" height="286" key="GridCell.Tab.1.bottom" timestamp="1596880705262">
+    <state width="1398" height="286" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1596885987840" />
+    <state width="1398" height="286" key="GridCell.Tab.1.bottom" timestamp="1596885987841">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596880705262" />
-    <state width="1398" height="286" key="GridCell.Tab.1.center" timestamp="1596880705261">
+    <state width="1398" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596885987841" />
+    <state width="1398" height="286" key="GridCell.Tab.1.center" timestamp="1596885987841">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1596880705261" />
-    <state width="1398" height="286" key="GridCell.Tab.1.left" timestamp="1596880705261">
+    <state width="1398" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1596885987841" />
+    <state width="1398" height="286" key="GridCell.Tab.1.left" timestamp="1596885987840">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1596880705261" />
-    <state width="1398" height="286" key="GridCell.Tab.1.right" timestamp="1596880705261">
+    <state width="1398" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1596885987840" />
+    <state width="1398" height="286" key="GridCell.Tab.1.right" timestamp="1596885987841">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1596880705261" />
+    <state width="1398" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1596885987841" />
     <state x="462" y="171" key="RollbackChangesDialog" timestamp="1596624035764">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
