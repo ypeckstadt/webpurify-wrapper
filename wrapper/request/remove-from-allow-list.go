@@ -2,7 +2,6 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper"
 	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
 	"io/ioutil"
 	"net/http"
@@ -12,8 +11,8 @@ import (
 func (w *WebPurifyRequest) RemoveFromAllowList(word string) (response.WebPurifyRemoveFromAllowListResponse, error) {
 
 	// create request parameter collection
-	requestParameters := []wrapper.WebPurifyRequestParameter{
-		{Type: wrapper.Word, Value: word},
+	requestParameters := []WebPurifyRequestParameter{
+		{Type: Word, Value: word},
 	}
 
 	// build http request

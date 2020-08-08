@@ -12,21 +12,21 @@ import (
 func (w *WebPurifyRequest) CheckCount(language wrapper.WebPurifyLanguage,text string, filterEmail bool, filterPhone bool, filterLink bool) (response.WebPurifyCheckCountResponse, error) {
 
 	// create request parameter collection
-	requestParameters := []wrapper.WebPurifyRequestParameter{
-		{Type: wrapper.Text, Value: text},
-		{Type: wrapper.Language, Value: string(language)},
+	requestParameters := []WebPurifyRequestParameter{
+		{Type: Text, Value: text},
+		{Type: Language, Value: string(language)},
 	}
 
 	if filterEmail {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.Email, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: Email, Value: "1"})
 	}
 
 	if filterPhone {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.Phone, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: Phone, Value: "1"})
 	}
 
 	if filterLink {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.Link, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: Link, Value: "1"})
 	}
 
 	// build http request

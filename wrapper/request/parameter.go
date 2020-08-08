@@ -1,4 +1,4 @@
-package wrapper
+package request
 
 type WebPurifyRequestParameterType string
 
@@ -42,6 +42,6 @@ const(
 )
 
 type WebPurifyRequestParameter struct {
-	Type WebPurifyRequestParameterType
+	Type  WebPurifyRequestParameterType
 	Value string
 }

@@ -2,7 +2,6 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper"
 	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
 	"io/ioutil"
 	"net/http"
@@ -12,14 +11,14 @@ import (
 func (w *WebPurifyRequest) GetAllowList(cdata bool, useDeepSearch bool) (response.WebPurifyGetAllowListResponse, error) {
 
 	// create request parameter collection
-	requestParameters := []wrapper.WebPurifyRequestParameter{}
+	requestParameters := []WebPurifyRequestParameter{}
 
 	if cdata {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.CDATA, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: CDATA, Value: "1"})
 	}
 
 	if useDeepSearch {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.DeepSearch, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: DeepSearch, Value: "1"})
 	}
 
 	// build http request

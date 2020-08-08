@@ -20,26 +20,26 @@ func (w *WebPurifyRequest) Replace(
 	) (response.WebPurifyReplaceResponse, error) {
 
 	// create request parameter collection
-	requestParameters := []wrapper.WebPurifyRequestParameter{
-		{Type: wrapper.Text, Value: text},
-		{Type: wrapper.ReplaceSymbol, Value: replaceSymbol},
-		{Type: wrapper.Language, Value: string(language)},
+	requestParameters := []WebPurifyRequestParameter{
+		{Type: Text, Value: text},
+		{Type: ReplaceSymbol, Value: replaceSymbol},
+		{Type: Language, Value: string(language)},
 	}
 
 	if filterEmail {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.Email, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: Email, Value: "1"})
 	}
 
 	if filterPhone {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.Phone, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: Phone, Value: "1"})
 	}
 
 	if filterLink {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.Link, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: Link, Value: "1"})
 	}
 
 	if useCDATA {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.CDATA, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: CDATA, Value: "1"})
 	}
 
 	// build http request

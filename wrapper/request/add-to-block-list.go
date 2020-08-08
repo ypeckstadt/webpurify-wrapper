@@ -2,7 +2,6 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper"
 	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
 	"io/ioutil"
 	"net/http"
@@ -12,12 +11,12 @@ import (
 func (w *WebPurifyRequest) AddToBlockList(word string, useDeepSearch bool) (response.WebPurifyAddToBlockListResponse, error) {
 
 	// create request parameter collection
-	requestParameters := []wrapper.WebPurifyRequestParameter{
-		{Type: wrapper.Word, Value: word},
+	requestParameters := []WebPurifyRequestParameter{
+		{Type: Word, Value: word},
 	}
 
 	if useDeepSearch {
-		requestParameters = append(requestParameters, wrapper.WebPurifyRequestParameter{Type: wrapper.DeepSearch, Value: "1"})
+		requestParameters = append(requestParameters, WebPurifyRequestParameter{Type: DeepSearch, Value: "1"})
 	}
 
 	// build http request

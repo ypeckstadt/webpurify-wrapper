@@ -7,7 +7,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/webpurify-wrapper.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/wrapper/enum.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/wrapper/language.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/wrapper/parameter.go" afterDir="false" />

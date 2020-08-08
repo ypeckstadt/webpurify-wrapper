@@ -1,7 +1,6 @@
 package request
 
 import (
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper"
 	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
 	"net/http"
 )
@@ -12,7 +11,7 @@ type WebPurifyRequest struct {
 	APIKey string
 }
 
-func (w *WebPurifyRequest) createRequest(check WebPurifyRequestMethod, parameters ...wrapper.WebPurifyRequestParameter) (*http.Request, error) {
+func (w *WebPurifyRequest) createRequest(check WebPurifyRequestMethod, parameters ...WebPurifyRequestParameter) (*http.Request, error) {
 	request, err := http.NewRequest("POST", w.URL, nil)
 	if err != nil {
 		return nil, err
@@ -22,9 +21,9 @@ func (w *WebPurifyRequest) createRequest(check WebPurifyRequestMethod, parameter
 	q := request.URL.Query()
 
 	// add default URL parameters
-	q.Add(string(wrapper.Format), string(response.JSON))
-	q.Add(string(wrapper.APIKey), w.APIKey)
-	q.Add(string(wrapper.Method), string(check))
+	q.Add(string(Format), string(response.JSON))
+	q.Add(string(APIKey), w.APIKey)
+	q.Add(string(Method), string(check))
 
 	// add request based parameters
 	for _, s := range parameters {
