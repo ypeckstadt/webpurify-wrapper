@@ -4,5 +4,5 @@ type WebPurifyResponseFormat string
 
 const(
 	JSON WebPurifyResponseFormat = "json"
-	XML WebPurifyResponseFormat = "xml"
+	XML  WebPurifyResponseFormat = "xml"
 )

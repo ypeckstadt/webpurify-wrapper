@@ -2,15 +2,14 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
+	"github.com/ypeckstadt/webpurify-wrapper/response"
 	"io/ioutil"
 	"net/http"
 )
 
 // Return is a profanity search method. Returns the number of profane words found and a list of the profane words. If the text is clean 0 (zero) is returned.
 func (w *WebPurifyRequest) Return(
-	language wrapper.WebPurifyLanguage,
+	language WebPurifyLanguage,
 	text string,
 	filterEmail bool,
 	filterPhone bool,

@@ -2,14 +2,13 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
+	"github.com/ypeckstadt/webpurify-wrapper/response"
 	"io/ioutil"
 	"net/http"
 )
 
 // Check is a profanity checking method. If profanity is found it returns 1. If the text is clean 0 (zero) is returned.
-func (w *WebPurifyRequest) Check(language wrapper.WebPurifyLanguage, text string, filterEmail bool, filterPhone bool, filterLink bool) (response.WebPurifyCheckResponse, error) {
+func (w *WebPurifyRequest) Check(language WebPurifyLanguage, text string, filterEmail bool, filterPhone bool, filterLink bool) (response.WebPurifyCheckResponse, error) {
 
 	//rsp (Optional)
 	//To include our response time in the result. set = 1

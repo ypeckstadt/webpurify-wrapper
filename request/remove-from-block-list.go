@@ -2,7 +2,7 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
+	"github.com/ypeckstadt/webpurify-wrapper/response"
 	"io/ioutil"
 	"net/http"
 )

@@ -2,15 +2,14 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
+	"github.com/ypeckstadt/webpurify-wrapper/response"
 	"io/ioutil"
 	"net/http"
 )
 
 // Replace is a profanity search and replace method. Returns the number of profane words found and the submitted text with profane words replaced with symbol provided. If the text is clean 0 (zero) is returned.
 func (w *WebPurifyRequest) Replace(
-	language wrapper.WebPurifyLanguage,
+	language WebPurifyLanguage,
 	text string,
 	replaceSymbol string,
 	filterEmail bool,

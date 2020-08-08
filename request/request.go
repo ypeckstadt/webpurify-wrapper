@@ -1,7 +1,7 @@
 package request
 
 import (
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
+	"github.com/ypeckstadt/webpurify-wrapper/response"
 	"net/http"
 )
 

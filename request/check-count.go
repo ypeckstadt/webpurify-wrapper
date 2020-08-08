@@ -2,14 +2,13 @@ package request
 
 import (
 	"encoding/json"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper"
-	"github.com/ypeckstadt/webpurify-wrapper/wrapper/response"
+	"github.com/ypeckstadt/webpurify-wrapper/response"
 	"io/ioutil"
 	"net/http"
 )
 
 // CheckCount is a profanity checking method. Returns the number of profane words found in the submitted text. If the text is clean 0 (zero) is returned.
-func (w *WebPurifyRequest) CheckCount(language wrapper.WebPurifyLanguage,text string, filterEmail bool, filterPhone bool, filterLink bool) (response.WebPurifyCheckCountResponse, error) {
+func (w *WebPurifyRequest) CheckCount(language WebPurifyLanguage,text string, filterEmail bool, filterPhone bool, filterLink bool) (response.WebPurifyCheckCountResponse, error) {
 
 	// create request parameter collection
 	requestParameters := []WebPurifyRequestParameter{
