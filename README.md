@@ -1,5 +1,5 @@
-# webpurify-wrapper
-Wrapper for WebPurify written in golang
+# WebPurify profanity wrapper
+Wrapper for WebPurify profanity filter written in golang
 
 ### Usage example
 
